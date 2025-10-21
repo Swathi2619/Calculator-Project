@@ -1,0 +1,138 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #f4f4f4;                          /* soft light background */
+}
+
+.calculator {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);    /* shadow for the whole div */
+}
+
+#display {
+  width: 95%;
+  height: 60px;
+  font-size: 30px;
+  /* font-weight: bold; */
+  text-align: right;
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background: #f9f9f9;                           /* flat input background */
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.btn {
+  padding: 20px;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  background: #f0f0f0;                          /* flat button color */
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.1s ease;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.btn:hover {
+  background: #e6e6e6;                           /* simple hover effect */
+}
+
+.equal {
+  background: #b2fab4;                             /* flat green */
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.equal:hover{
+    background-color: #9de7a6;;
+}
+
+.btn.operator {
+  background: #cceeff;                              /* light orange for operators */
+}
+.btn.operator:hover {
+  background: #e6e6e6;
+}
+
+
+/* ---------------- Responsive Adjustments ---------------- */
+@media (max-width: 768px) {
+  body {
+    height: auto;
+    padding: 20px;
+  }
+
+  .calculator {
+    width: 100%;
+    max-width: 380px;
+    padding: 20px;
+  }
+
+  #display {
+    width: 100%;
+    font-size: 24px;
+    height: 50px;
+  }
+
+  .btn {
+    padding: 15px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .calculator {
+    max-width: 95%;
+    padding: 15px;
+    border-radius: 15px;
+  }
+
+  #display {
+    font-size: 20px;
+    height: 45px;
+    padding: 8px;
+  }
+
+  .buttons {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+  }
+
+  .btn {
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  .equal {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 360px) {
+  .buttons {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  #display {
+    font-size: 18px;
+  }
+
+  .btn {
+    font-size: 13px;
+    padding: 10px;
+  }
+}
