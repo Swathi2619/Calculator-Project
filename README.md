@@ -12,4 +12,5 @@ It performs basic arithmetic operations and includes a square root function.
 
 ## How to Run
 1. Clone or download this repository  
-2. Open `index.html` in your browser 
+2. Open `index.html` in your browser
+
