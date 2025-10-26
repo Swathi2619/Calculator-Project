@@ -15,7 +15,7 @@ body {
 }
 
 #display {
-  width: 90%;
+  width: 95%;
   height: 50px;
   font-size: 30px;
   /* font-weight: bold; */
@@ -96,7 +96,7 @@ body {
 
 @media (max-width: 480px) {
   .calculator {
-    max-width: 95%;
+    max-width: 85%;
     padding: 15px;
     border-radius: 15px;
   }
