@@ -103,7 +103,7 @@ body {
   }
 
   #display {
-    width: 80%;       /* explicitly set smaller width */
+    width: 90%;       /* explicitly set smaller width */
     font-size: 20px;
     height: 40px;     /* slightly smaller height */
     padding: 6px;
