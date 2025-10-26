@@ -83,7 +83,7 @@ body {
   }
 
   #display {
-    width: 90%;       /* reduced from 100% */
+    width: 90%;       
     font-size: 24px;
     height: 50px;
     padding: 8px;
@@ -103,9 +103,9 @@ body {
   }
 
   #display {
-    width: 90%;       /* explicitly set smaller width */
+    width: 90%;       
     font-size: 20px;
-    height: 40px;     /* slightly smaller height */
+    height: 40px;     
     padding: 6px;
   }
 
@@ -130,7 +130,7 @@ body {
   }
 
   #display {
-    width: 80%;       /* narrowest width for very small phones */
+    width: 90%;      
     font-size: 18px;
     height: 35px;
     padding: 5px;
